@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head;
+         any other head content must come *after* these tags -->
+    <title>Twitter</title>
+    <!-- Bootstrap's CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/twitter.css" rel="stylesheet">
+</head>
+<body>
+  <!-- navigation bar -->
+  <nav class="navbar navbar-fixed-top navbar-default">
+    <div class="container">
+      <!-- left list of button in the navigation bar -->
+      <div class="nav navbar-nav navbar-left">
+        <ul class="navbar-brand list-inline">
+          <li>
+            <span class="glyphicon glyphicon-home"></span>
+            Home
+          </li>
+          <li>
+            <span class="glyphicon glyphicon-flash"></span>
+            Moments
+          </li>
+          <li>
+            <span class="glyphicon glyphicon-bell"></span>
+            Notifications
+          </li>
+          <li>
+            <span class="glyphicon glyphicon-envelope"></span>
+            Messages
+          </li>
+        </ul>
+      </div>
+      <!-- container that contains list of right algin elements -->
+      <div class="nav navbar-nav navbar-right">
+        <!-- Search areas in the navigation bar -->
+        <form class="navbar-form navbar-left" role="search">
+          <div class="input-group">
+            <input type="text" class="form-control twitter-search" placeholder="Search on Twitter">
+            <span class="input-group-btn">
+              <button type="submit" class="btn btn-default">
+                <span class="glyphicon glyphicon-search"></span>
+              </button>
+            </span>
+          </div>
+        </form>
+        <!-- two buttons -->
+        <div class="nav navbar-nav">
+          <!-- picture button -->
+          <div class="btn-group" role="group">
+            <button type="button" class="btn navbar-btn btn-default">PIC</button>
+          </div>
+          <!-- tweet button -->
+          <div class="btn-group" role="group">
+            <button type="button" class="btn navbar-btn btn-default">
+                <span class="glyphicon glyphicon-edit"></span>
+                Tweet
+              </button>
+            </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <!-- tweet area -->
+  <div class="container">
+    <div class="row">
+      <!-- left whiteSpace -->
+      <div class="col-md-3"></div>
+      <!-- main feed -->
+      <div class="col-md-6">
+        <div class="panel panel-default">
+          <div class="panel-body">
+            <!-- status row -->
+            <div class="row">
+              <div class="col-md-6">
+                <div class="media">
+                  <div class="media-left media-top">
+                    PIC
+                  </div>
+                  <div class="media-body">
+                    <a href="#">NASA</a>
+                    <span class="glyphicon glyphicon-check"></span>
+                    <br>@NASA
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="btn-group pull-right" role="group">
+                  <button type="button" class="btn btn-default">
+                    <span class="glyphicon glyphicon-asterisk"></span>
+                  </button>
+                  <button type="button" class="btn btn-default ">Following</button>
+                </div>
+              </div>
+            </div>
+            <!-- tweet info row-->
+            <div class="row">
+              <div class="col-md-12">
+                <div class="media">
+                  <div class="media-left media-top">
+                    This spiral galaxy hosts a supermassive black hole that's
+                    also super-hungry:
+                    <a href="#">go.nasa.gov/1Rp6V2w  @NASA_Hubble</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- image row -->
+            <div class="row">
+              <div class="col-md-12">
+                <img src="img/galaxy.jpg" width="100%"/>
+              </div>
+            </div>
+            <hr>
+            <!-- comment status row -->
+            <div class="row">
+              <div class="col-md-4">
+                <ul class="list-inline">
+                  <li>RETWEETS <br>1851</li>
+                  <li>Likes <br>3127</li>
+                </ul>
+              </div>
+              <div class="col-md-8">
+                <ul class="list-inline">
+                  <li><a href="#">PIC</a></li>
+                  <li><a href="#">PIC</a></li>
+                  <li><a href="#">PIC</a></li>
+                  <li><a href="#">PIC</a></li>
+                  <li><a href="#">PIC</a></li>
+                  <li><a href="#">PIC</a></li>
+                  <li><a href="#">PIC</a></li>
+                </ul>
+              </div>
+            </div>
+            <hr>
+            <!-- post time row -->
+            <div class="row">
+              <div class="col-md-12">
+                <div class="">
+                  9:44 AM - 8 Jan 2016
+                </div>
+              </div>
+            </div>
+            <!-- tweet icon row -->
+            <div class="row">
+              <div class="col-md-12 tweet-status">
+                <ul class="list-inline">
+                  <li>
+                    <a href="#"><span class="glyphicon glyphicon-arrow-left"></span></a>
+                  </li>
+                  <li>
+                    <a href="#"><span class="glyphicon glyphicon-refresh"></span></a>
+                  </li>
+                  <li>
+                    <a href="#"><span class="glyphicon glyphicon-heart"></span></a>
+                  </li>
+                  <li>
+                    <a href="#"><span class="glyphicon glyphicon-option-horizontal"></span></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <!-- reply box -->
+            <div class="row twitter-reply">
+              <div class="col-md-12">
+                <div class="media">
+                  <div class="media-left media-top">
+                    PIC
+                  </div>
+                  <div class="media-body">
+                    <input type="text" class="form-control"
+                      placeholder="Reply to @NASA @NASA_Hubble">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3"></div>
+    </div>
+  </div>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="js/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below),
+         or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>
